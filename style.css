@@ -1,0 +1,27 @@
+body {
+	background-color: #a9c6cc;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#board {
+	display: grid;
+	grid-template-columns: repeat(var(--GRID_COLS), minmax(min-content, 1fr));
+	gap: 0.5em;
+}
+.cell {
+	aspect-ratio: 1 / 1;
+	font-size: 300%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid rgb(168, 185, 255);
+	border-radius: 100%;
+}
+
+.player1 {
+	background-color: hsl(212, 79%, 78%);
+}
+
+.player2 {
+	background-color: hsl(3, 89%, 75%);
+}
