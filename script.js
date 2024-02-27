@@ -31,7 +31,7 @@ function checkForWinner(row, col) {
 	bestSequence = Math.max(checkVertical(row, col), bestSequence);
 	bestSequence = Math.max(checkHorizontal(row, col), bestSequence);
 	bestSequence = Math.max(checkDiagonal(row, col), bestSequence);
-	if (bestSequence === 4) {
+	if (bestSequence >= 4) {
 		alert("WINNER!");
 		return true;
 	}

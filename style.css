@@ -4,10 +4,11 @@ body {
 }
 #board {
 	display: grid;
-	grid-template-columns: repeat(var(--GRID_COLS), minmax(min-content, 1fr));
+	grid-template-columns: repeat(var(--GRID_COLS), max-content);
 	gap: 0.5em;
 }
 .cell {
+	width: 2em;
 	aspect-ratio: 1 / 1;
 	font-size: 300%;
 	background-color: rgb(255, 255, 255);
